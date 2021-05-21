@@ -60,6 +60,20 @@ crazyDiff(10)
 Write a function "boundary" which accept an integer n and returns true if n is within 20 and 100 (included) or if it's equal to 400.
 */
 
+const boundary = function(ex4Number){
+    if (ex4Number >= 20 && ex4Number <= 100){
+        console.log(true)
+    }else if (ex4Number === 400) {
+        console.log(true)
+    } else {
+        console.log(false)
+    }
+}
+
+boundary(80)
+boundary(150)
+boundary(400)
+
 /* EXERCISE 5
 Write a function "strivify" which accepts a string.
 It should add the word "Strive" in front of the given string, but if the given string already begins with "Strive", then it should just return the original string.
