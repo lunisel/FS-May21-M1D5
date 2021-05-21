@@ -121,7 +121,14 @@ check3and7(16)
 Write a function "reverseString" to programmatically reverse a given string (es.: Strive => evirtS).
 */
 
-/* WRITE YOUR CODE HERE */
+const reverseString = function(givenStringEx7){
+    let splittedString = givenStringEx7.split("")
+    let reversedArray = splittedString.reverse()
+    let reversedString = reversedArray.join("")
+    console.log("Now, ", givenStringEx7, " becomes ", reversedString)
+}
+
+reverseString("Baloon")
 
 /* EXERCISE 8
 Write a function "upperFirst" to capitalize the first letter of each word of a given string passed as a parameter.
