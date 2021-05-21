@@ -98,6 +98,25 @@ Write a function "check3and7" which accepts a positive number and check if it is
 HINT: Module Operator
 */
 
+const check3and7 = function(positiveNumber){
+    let numberIsAMultiple3 = positiveNumber % 3
+    let numberIsAMultiple7 = positiveNumber % 7
+    if (numberIsAMultiple3 === 0){
+        console.log("This number is a multiple of 3!")
+    } else if (numberIsAMultiple7 === 0){
+        console.log("This number is a multiple of 7!")
+    } else {
+        console.log("This number is not a multiple of 3 or 7")
+    }
+}
+
+console.log("If the number is 12: ")
+check3and7(12)
+console.log("If the number is 49: ")
+check3and7(49)
+console.log("If the number is 16: ")
+check3and7(16)
+
 /* EXERCISE 7
 Write a function "reverseString" to programmatically reverse a given string (es.: Strive => evirtS).
 */
