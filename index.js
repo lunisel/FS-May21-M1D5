@@ -152,7 +152,14 @@ cutString("Broccoli")
 Write a function "giveMeRandom" which accepts a number n and returns an array containing n random numbers between 0 and 10.
 */
 
-/* WRITE YOUR CODE HERE */
+const giveMeRandom = function(n) {
+    let arrWithNums = [];
+    for(i = 0; i < n; i++) {
+        arrWithNums.push(Math.floor(Math.random() * 10)); 
+    }
+    return arrWithNums;
+}
+console.log(giveMeRandom(8));
 
 /* WHEN YOU ARE FINISHED
 Commit and push the code to your personal GitHub repository and share the link to your commit in Eduflow.
