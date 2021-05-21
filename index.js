@@ -134,6 +134,19 @@ reverseString("Baloon")
 Write a function "upperFirst" to capitalize the first letter of each word of a given string passed as a parameter.
 */
 
+const upperFirst = function(givenStringEx8){
+    let splittedArrays = givenStringEx8.split(" ")
+    console.log(splittedArrays)
+    let splittedWords = []
+    for (i=0 ; i<givenStringEx8.length; i++){
+        splittedWords.push(splittedArrays[i].charAt(0).toUpperCase()+splittedArrays[i].slice(1))
+        return finalWords = splittedWords.join(" ")
+
+    }
+}
+
+console.log(upperFirst("welcome back luna!"))
+
 /* EXERCISE 9
 Write a function "cutString" to create a new string without the first and last character of a given string.
 */
