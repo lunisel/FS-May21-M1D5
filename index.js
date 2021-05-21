@@ -134,13 +134,19 @@ reverseString("Baloon")
 Write a function "upperFirst" to capitalize the first letter of each word of a given string passed as a parameter.
 */
 
-/* WRITE YOUR CODE HERE */
-
 /* EXERCISE 9
 Write a function "cutString" to create a new string without the first and last character of a given string.
 */
 
-/* WRITE YOUR CODE HERE */
+const cutString = function(givenStringEx9){
+    let givenStringEx9IntoArray = givenStringEx9.split("")
+    givenStringEx9IntoArray.pop()
+    givenStringEx9IntoArray.shift()
+    let wordResultEx9 = givenStringEx9IntoArray.join("")
+    console.log(givenStringEx9," now becomes ",wordResultEx9)
+}
+
+cutString("Broccoli")
 
 /* EXERCISE 10
 Write a function "giveMeRandom" which accepts a number n and returns an array containing n random numbers between 0 and 10.
