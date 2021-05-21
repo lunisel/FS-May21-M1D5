@@ -21,6 +21,21 @@ area(3, 5)
 Write a function "crazySum" which receives two integers. It should return the sum of those two values, but if the two values are the same then it should return their sum multiplied by 3.
 */
 
+const crazySun = function(firstInteger, secondInteger){
+    if(firstInteger === secondInteger){
+       let moltiplicatedResult = (firstInteger + secondInteger)*3
+        console.log(moltiplicatedResult)
+    } else {
+        let normalResult = firstInteger + secondInteger
+        console.log(normalResult)
+    }
+}
+
+console.log("If the numbers are the same: ")
+crazySun(6,6)
+console.log("If the numbers are different: ")
+crazySun(5,10)
+
 /* EXERCISE 3
 Write a function "crazyDiff" that computes the absolute difference between a given number and 19. 
 It should return triple their absolute difference if the given number is greater than 19.
