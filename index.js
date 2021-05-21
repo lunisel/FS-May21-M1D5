@@ -42,7 +42,7 @@ It should return triple their absolute difference if the given number is greater
 */
 
 const crazyDiff = function(firstGivenNumber, secondGivenNumber = 19){
-    let firstDifferece = secondGivenNumber - firstGivenNumber
+    let firstDifferece = Math.abs(secondGivenNumber - firstGivenNumber)
     if (firstGivenNumber >= 19){
         let moreThan19Result = firstDifferece * 3
         console.log(moreThan19Result)
